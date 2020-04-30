@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AdDi-chat
 
-## Available Scripts
+Chatt-app gjord med react, express.js och socket.io av Adam Kjäll och Dick Stenvist
 
-In the project directory, you can run:
+Github-länk: https://github.com/Stenis76/AdDi-chat
 
-### `yarn start`
+Websida: https://addi-chat.netlify.app/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Bygginstruktioner
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Gå in i server mappen och kör kommandon
+2. "npm install"
+3. Installera nodemon "npm i nodemon"
+4. "npm start"
+5. Gå in i client mappen och kör kommandon
+6. "npm install"
+7. "npm start"
 
-### `yarn test`
+## Assigment in swedish
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Lab 2 - Socket Chatt
 
-### `yarn build`
+I den här inlämningen skall ni skapa en chatt-baserad app som låter användare chatta med varandra i realtid. Kommunikationen skall sättas upp och göras med socket.io. Varje klient skall kunna skapa ett nytt rum alternativt gå in i ett befintligt rum. När ett nytt rum skapas kan ett lösenord anges, detta lösenord måste isåfall anges då en klient försöker gå med i rummet. Samtliga rum skall visas i en lista med sortering på låsta- och öppna rum (låsta rum har lösenord). En klient skall kunna gå in i ett rum genom att klicka på det i listan och är detta ett låst rum måste hen ange rätt lösenord för att komma in. Ett rum skall automatiskt försvinna då det inte längre finns några klienter kvar i rummet.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ni väljer själva om ni vill använda en utökad utvecklings-stack i projektet, notera att detta inte är ett krav. Exempel på ramverk ni kan lägga till i er stack är: Typescript, React, mm. Låt kreativiteten flöda!
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+För att bli godkänd på den här uppgiften MÅSTE ni använda GIT och GitHub. Inlämningen sker som vanligt via Zenit där lämnar in er projektmapp som en zip-fil. I projektmappen ska det finnas (utöver all kod) en README.md fil som innehåller en titel, beskrivning av uppgiften och vad som krävs för att bygga och starta projektet, samt en länk till GitHub repot. Notera att om instruktioner för hur projektet byggs och startas inte finns eller om instruktionerna är felaktiga kommer uppgiften bli underkänd.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Utöver koden ska en muntligt presentation skall genomföras per grupp där ni demar programmet ni har skapat.
 
-### `yarn eject`
+Para ihop er i grupp om tre - ni väljer själva vem ni jobbar med.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Läs noga igenom hela uppgiftsbeskrivningen tillsammans innan ni börjar.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Krav för godkänt:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+En fungerade chatt där användaren kan välja ett eget visningsnamn
+Det ska gå att skapa och joina ett rum med eller utan lösenord
+Tomma rum ska automatiskt försvinna
+Samtliga rum skall vara synligt i en lista där låsta & öppna rum är tydligt separerade
+Git & GitHub har använts
+Projektmappen innehåller en README.md fil (läs ovan för mer info)
+Uppgiften lämnas in i tid!
+Krav för väl godkänt:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Alla punkter för godkänt är uppfyllda
+Varje rum i listan skall även visa vilka klienter som finns i rummet
+När någon håller på att skriva ett meddelande skall det synas för alla andra i rummet
+Det ska gå att skriva kommandon ”/” för att utföra en operation som integrerar med tredjepart API’er - minst 2 kommandon
